@@ -1,0 +1,51 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": ["airbnb-base", "plugin:react/recommended", "react-app"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "import/order": 0,
+    "trailing-comma": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", "ts", "tsx"] }
+    ],
+    "import/no-named-as-default": 0,
+    "implicit-arrow-linebreak": 0,
+    "import/no-unresolved": 0,
+    "consistent-return": 0,
+    "prefer-promise-reject-errors": 0,
+    "default-param-last": 0,
+    "no-param-reassign": 0,
+    "object-curly-newline": 0,
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "comma-dangle": "off",
+    "arrow-body-style": 0,
+    "react/prop-types": "off",
+    "import/newline-after-import": "off",
+    "no-useless-return": 1,
+    "operator-linebreak": 0,
+    "import/extensions": 0,
+    "no-restricted-globals": 0,
+    "@typescript-eslint/no-unused-vars": 0
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
