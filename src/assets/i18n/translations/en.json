@@ -1,0 +1,13 @@
+{
+  "common": {
+    "back": "back",
+    "ok": "ok"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Home Page"
+  }
+}

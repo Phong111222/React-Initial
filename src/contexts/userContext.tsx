@@ -1,9 +1,15 @@
-import React, { FC, ReactNode } from 'react';
-const { createContext, useState, useCallback, useContext } = require('react');
+import React, {
+  FC,
+  ReactNode,
+  createContext,
+  useState,
+  useCallback,
+  useContext,
+} from 'react';
 
 const initialValue = {
   userInfo: null,
-  updateUserInfo: () => {},
+  updateUserInfo: (...args: any[]) => {},
 };
 
 const userContext = createContext(initialValue);

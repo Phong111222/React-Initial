@@ -15,7 +15,17 @@
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "appTypes/*": ["./@types/*"],
+      "components/*": ["./components/*"],
+      "hook/*": ["./hook/*"],
+      "assets/*": ["./assets/*"],
+      "config/*": ["./config/*"],
+      "context/*": ["./contexts/*"],
+      "routers/*": ["./routers/*"],
+      "utils/*": ["./utils/*"]
+    }
   },
   "include": ["src"]
 }

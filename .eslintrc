@@ -3,8 +3,14 @@
     "es6": true,
     "browser": true
   },
-  "extends": ["airbnb-base", "plugin:react/recommended", "react-app"],
-  "parser": "@babel/eslint-parser",
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended",
+    "react-app",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  // "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "requireConfigFile": false,
     "ecmaVersion": 2018,
@@ -40,9 +46,14 @@
     "operator-linebreak": 0,
     "import/extensions": 0,
     "no-restricted-globals": 0,
-    "@typescript-eslint/no-unused-vars": 0
+    "@typescript-eslint/no-unused-vars": 0,
+    "no-trailing-spaces": 0,
+    "max-len": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/no-explicit-any": 0
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
   "settings": {
     "react": {
       "version": "detect"
