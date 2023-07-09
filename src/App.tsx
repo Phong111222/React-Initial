@@ -1,22 +1,19 @@
-import './config/i18n';
+import 'config/i18n';
 import './assets/styles/global.scss';
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
-import queryClient from 'config/queryClient';
-import AppRouter from 'routers';
+
+import AppRouter from './routers';
+import { Provider } from 'react-redux';
+import store from 'store';
 
 const App = () => {
   return (
-    <QueryClientProvider client={queryClient}>
-      {process.env.REACT_APP_MODE === 'local' && (
-        <ReactQueryDevtools initialIsOpen={false} />
-      )}
+    <Provider store={store}>
       <Router>
         <AppRouter />
       </Router>
-    </QueryClientProvider>
+    </Provider>
   );
 };
 

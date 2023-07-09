@@ -22,9 +22,10 @@
       "hook/*": ["./hook/*"],
       "assets/*": ["./assets/*"],
       "config/*": ["./config/*"],
-      "context/*": ["./contexts/*"],
+      "contexts/*": ["./contexts/*"],
       "routers/*": ["./routers/*"],
-      "utils/*": ["./utils/*"]
+      "utils/*": ["./utils/*"],
+      "pages/*": ["./pages/*"]
     }
   },
   "include": ["src"]

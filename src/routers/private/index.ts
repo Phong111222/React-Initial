@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { AppRouteProps } from 'routers/type';
 import ROUTE from '../routes';
 
-const Home = lazy(() => import('../../pages/home'));
+const Home = lazy(() => import('pages/home'));
 
 const privateRoutes: Partial<AppRouteProps>[] = [
   {
